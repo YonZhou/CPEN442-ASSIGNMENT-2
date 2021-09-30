@@ -6,7 +6,7 @@ found_answer = False
 tries = 0
 
 hashed1 = binascii.crc32('fb5229914d191bf3e14389a8826f8dc8'.encode('utf8'))
-trial_int = 72661110
+trial_int = 0
 while found_answer == False:
     hashed2 = binascii.crc32(str(trial_int).encode('utf8'))
     if tries % 1000000 == 0:
